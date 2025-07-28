@@ -8,9 +8,9 @@ body{
 .form{
   position: absolute;
   top: 30%;
-  box-shadow: 0 4px 8px rgb( red, green, blue,.3);
+  box-shadow: 0 4px 8px rgb(0,0, 0,.3);
   width: 400px;
-  background-color: lightpink;
+  background-color: yellow;
   border-radius: 10px;
  
 }
@@ -32,11 +32,12 @@ body{
 
 }
 .list li{
-  background-color: lightpink;
   list-style-type: none;
   padding: 20px;
   font-family: cursive;
   border-top: dotted;
+  border-color: darkgray;
+  position: relative;
 }
 .list li .fa-trash{
   color: red;
