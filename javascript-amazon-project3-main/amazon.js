@@ -1,4 +1,5 @@
-/* Save data*/
+import {cart} from './data/cart.js';
+import {products} from './data/products.js';
 
 /* Generate the Html */
 let productsHtml ='';
@@ -57,6 +58,12 @@ products.forEach((product) => {
 `;
      
 });
+
+
+
+
+
+
 document.querySelector('.js-products-grid')
 .innerHTML = productsHtml;
 
@@ -86,7 +93,7 @@ let matchingItem;
 let cartQuantity = 0;
 
 cart.forEach((item) => {
-  cartQuantity +=item.quantity;
+  cartQuantity = item.quantity ;
 });
 
 document.querySelector('.js-cart-quantity')
