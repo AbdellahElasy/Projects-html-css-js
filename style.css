@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+  /*overflow: hidden;*/
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+  background-color: black;
+  background-attachment: fixed;
+}
+header{
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  animation: fadeIn 1s ease-in-out;
+}
+/* Add animated stars */
+.star{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  animation: twinke 2s infinite;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0,5);
+}
+@keyframes twinke {
+  0% {
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.5;
+  }
+  
+}
+.navber {
+ display: flex;
+ justify-content:space-around ;
+ align-items: center;
+ animation: slideInFromTop 1s ease-in-out;
+}
+.navber img{
+  width: 50px;
+  animation: rotateIn 1s ease-in-out;
+}
